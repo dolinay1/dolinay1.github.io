@@ -25,42 +25,74 @@
 <section class="bg-white">
   <div class="grid h-screen">
       <div class="m-auto">
-        <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center">About me</h1>
-          <div class="grid grid-cols-2 w-2/3 mx-auto sm:w-full lg:text-2xl sm:text-xl p-6 bg-white rounded-lg shadow-xl">
+        <div class="container">
+          <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center mb-5">About</h1>
+          <div class="grid grid-cols-2 w-2/3 mx-auto sm:w-full lg:text-2xl sm:text-xl p-6">
             <div class="text-center">
-              picture
-            </div>
-            <div class="">
-              My name is Julian Dolinay, and I'm a front-end developer working towards becoming a fullstack developer.<br>
+              <img class="rounded-full mt-5 mb-5 mr-5 shadow-2xl responsive-profile-pic" src="./assets/headshot.png" alt="profile picture">
+              <h3 class="text-yellow-600">About me</h3>
+              <p class="xl:text-xl lg:text-xl text-sm">
+                My name is Julian Dolinay, and I currently reside in Philadephia. I'm a front-end developer working towards becoming a fullstack developer.<br>
                I always look foward to learning new technologies and enjoy taking on a challenge.
+              </p>
+            </div>
+            <div class="text-wrap lg:text-4xl">
+              technologies
             </div>
           </div>
-  
-    
+        </div>
       </div>
-   
   </div>
 </section>
 
-<!-- <section class="flex h-screen bg-gray-700">
-  <div class="m-auto">
-    <h1 class="lg:text-6xl sm:text-xl text-yellow-600 text-center">About Me</h1>
-    <div class="container grid grid-cols-1 w-full">
-      <div class="text-yellow-600 p-4">
-        <p>lot of text lots of text lots of text lots of text lots of text
-          lot of text lots of text lots of text lots of text lots of text
-          lot of text lots of text lots of text lots of text lots of text
-        </p>
-      </div>
-    </div>
-  </div>
-</section> -->
 
-<section class="flex h-screen">
+<section class="grid h-screen">
+  
   <div class="m-auto">
-    <div class="text-gray-700 m-2 text-center m-auto">
-      <p class="text-yellow-400">text</p>
-    </div>
+      <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center mb-8">Projects</h1>
+      <div class="grid xl:grid-cols lg:grid-cols-3 grid-cols-1 gap-8">
+        <div class="card text-yellow-600 mx-auto fill-image rounded-lg bg-white text-xl">
+          <a href="https://dolinay1.github.io/weather-forecast-app/index.html" target="_blank">
+            <img class="p-5 shadow-2xl responsive-project-pic" src="./assets/weather-dashboard-1.png" alt="weather forecast application"/>
+          </a>
+          
+        </div>
+        <div class="card text-yellow-600 mx-auto rounded-lg bg-white text-xl">
+          <a href="https://dolinay1.github.io/work-day-scheduler/Develop/index.html" target="_blank">
+            <img class="p-5 shadow-2xl responsive-project-pic" src="./assets/workdayscheduler2.jpg" alt="work day scheduler application"/>
+          </a>
+          
+        </div>
+        <div class="card text-yellow-600 mx-auto rounded-lg bg-white text-xl">
+          <a href="https://dolinay1.github.io/Covid-19-Donation-App/" target="_blank">
+            <img class="p-5 shadow-2xl responsive-project-pic" src="./assets/covid-19-app.png" alt="covid-19 donation application"/>
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="h-full flex bg-white">
+  <div class="mx-auto">
+    <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center mt-20 mb-5">Contact</h1>
+    <form class="w-full max-w-lg mb-20">
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            Name
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Name">
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+            Email
+          </label>
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="Email">
+        </div>
+      </div>
+    </form>
   </div>
 </section>
  

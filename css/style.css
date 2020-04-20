@@ -3,10 +3,36 @@
 
      /* font-family: 'Dosis', sans-serif; */
 
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
 
-    /* font-family: 'Monda', sans-serif; */
+    font-family: 'Monda', sans-serif;
 }
+
+.responsive-profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .responsive-project-pic {
+    object-fit: cover;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+  }
+
+  .fill-img {
+    flex-shrink: 0;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.card:hover {
+    color: white;
+    opacity: .5;}
+
+
 
 
 .grid {
