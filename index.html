@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./public/build/tailwind.css">
 </head>
+
 <body class="bg-black">
 <section>
+  <div id="particles-js"></div>
   <div class="flex h-screen">
     <div class="m-auto">
       <h1 class="lg:text-6xl sm:text-2xl text-yellow-600">Hello, my name is</h1>
@@ -29,10 +31,10 @@
           <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center mb-5">About</h1>
           <div class="grid grid-cols-2 w-2/3 mx-auto sm:w-full lg:text-2xl sm:text-xl p-6">
             <div class="text-center">
-              <img class="rounded-full mt-5 mb-5 mr-5 shadow-2xl responsive-profile-pic" src="./assets/headshot.png" alt="profile picture">
+              <img class="rounded-full m-auto mb-2 shadow-2xl responsive-profile-pic" src="./assets/headshot.png" alt="profile picture">
               <h3 class="text-yellow-600">About me</h3>
-              <p class="xl:text-xl lg:text-xl text-sm">
-                My name is Julian Dolinay, and I currently reside in Philadephia. I'm a front-end developer working towards becoming a fullstack developer.<br>
+              <p class="xl:text-lg lg:text-lg text-sm">
+                My name is Julian Dolinay, and I currently reside in Philadephia. I'm a front-end developer focused on Javascript technologies, working towards becoming a fullstack developer.<br>
                I always look foward to learning new technologies and enjoy taking on a challenge.
               </p>
             </div>
@@ -73,33 +75,75 @@
 </section>
 
 <section class="h-full flex bg-white">
-  <div class="mx-auto">
-    <h1 class="lg:text-6xl sm:text-2xl text-yellow-600 text-center mt-20 mb-5">Contact</h1>
-    <form class="w-full max-w-lg mb-20">
+  <div class="mx-auto mt-20 mb-20">
+    <form class="w-full max-w-lg">
       <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
             Name
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Name">
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nick" type="text">
+          <p class="text-gray-600 text-xs italic"></p>
         </div>
       </div>
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-            Email
+            E-mail
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="Email">
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email">
+          <p class="text-gray-600 text-xs italic"></p>
         </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+            Message
+          </label>
+          <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
+          <p class="text-gray-600 text-xs italic">Shoot me a message with your name and email so I can back to you ASAP.</p>
+        </div>
+      </div>
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/3">
+          <button class="shadow bg-yellow-600 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+            Send
+          </button>
+        </div>
+        <div class="md:w-2/3"></div>
       </div>
     </form>
   </div>
 </section>
  
+<footer class="flex justify-center px-4 text-gray-100 bg-black">
+  <div class="container py-6">
+      <h1 class="text-center text-lg font-bold lg:text-2xl text-yellow-600">
+          More ways to reach me
+      </h1>
+      <hr class="h-px mt-6 bg-gray-700 border-none">
 
+      <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+          <div>
+              <a href="#" class="text-xl text-yellow-600 font-bold">© Copyright 2020 by Julian Dolinay</a>
+          </div>
+          <div class="flex mx-auto mt-4 md:m-0">
+              <div class="mx-auto text-yellow-600">
+                <a href="https://github.com/dolinay1" target="_blank" class="px-4 text-sm">Github</a>
+                <a href="#" class="px-4 text-sm">Resume</a>
+                <a href="#" class="px-4 text-sm">LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
 
       
     
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script>
+  particlesJS.load("particles-js", "particles.json",
+   function() {console.log("particles.json loaded")})
+</script>
 </body>
 </html>

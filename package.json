@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dolinay1/dolinay1.github.io#readme",
   "dependencies": {
     "autoprefixer": "^9.7.6",
+    "particles.js": "^2.0.0",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
   }
